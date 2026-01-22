@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ved | Cloud & DevOps Engineer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="logo">Ved</div>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a onclick="openContact()">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Cloud & DevOps Engineer</h1>
+    <p>I build scalable cloud infrastructure and automate deployments using DevOps tools.</p>
+
+    <div class="buttons">
+      <button class="btn-primary" onclick="openContact()">Contact Me</button>
+      <button class="btn-secondary">View Work</button>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="grid">
+      <div class="card" onclick="openDetail('AWS Cloud','EC2, S3, IAM, networking, security best practices')">
+        <h3>AWS Cloud</h3>
+        <p>Core services & fundamentals</p>
+      </div>
+
+      <div class="card" onclick="openDetail('DevOps','Docker, Kubernetes basics, CI/CD with GitHub Actions')">
+        <h3>DevOps</h3>
+        <p>Automation & pipelines</p>
+      </div>
+
+      <div class="card" onclick="openDetail('Terraform','Provisioned AWS infra using Terraform with remote state')">
+        <h3>Terraform</h3>
+        <p>Infrastructure as Code</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+      <div class="card" onclick="openDetail('Smart Crowd Management','Cloud system with SOS, Lost & Found, Firebase backend')">
+        <h3>Smart Crowd Management</h3>
+        <p>Real-world cloud project</p>
+      </div>
+
+      <div class="card" onclick="openDetail('CI/CD Automation','GitHub Actions with self-hosted runner on AWS EC2')">
+        <h3>CI/CD Automation</h3>
+        <p>Pipeline automation</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Ved. All rights reserved.</footer>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal" id="detailModal">
+  <div class="modal-content">
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <button class="close-btn" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<!-- CONTACT MODAL -->
+<div class="modal" id="contactModal">
+  <div class="modal-content">
+    <h2>Contact Me</h2>
+    <p>Email: vedxxxx@gmail.com</p>
+    <p>Mobile: 86258XXXXX</p>
+    <button class="close-btn" onclick="closeContact()">Close</button>
+  </div>
+</div>
+
+<!-- JS FILE -->
+<script src="script.js"></script>
+</body>
+</html>
